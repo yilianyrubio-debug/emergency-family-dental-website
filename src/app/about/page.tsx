@@ -44,7 +44,7 @@ export default function AboutPage() {
     <>
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden bg-gradient-to-br from-purple-950 via-purple-900 to-brand-purple py-20 lg:py-28">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-purple-400 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-brand-lilac rounded-full blur-3xl" />
         </div>
@@ -102,6 +102,7 @@ export default function AboutPage() {
                 src="/images/dr-leal-and-staff.jpg"
                 alt="Dr. Leal with the Emergency and Family Dental team"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -186,6 +187,7 @@ export default function AboutPage() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-purple-950/0 group-hover:bg-purple-950/20 transition-colors duration-300" />

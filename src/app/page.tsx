@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* ===== HERO SECTION ===== */}
       <section className="relative overflow-hidden bg-gradient-to-br from-purple-950 via-purple-900 to-brand-purple min-h-[85vh] flex items-center">
         {/* Background pattern */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-purple-400 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-lilac rounded-full blur-3xl" />
         </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
                   />
                 </div>
                 {/* Floating review card */}
-                <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl shadow-purple-900/10">
+                <div className="absolute -bottom-6 left-0 lg:-left-6 bg-white rounded-2xl p-4 shadow-xl shadow-purple-900/10">
                   <div className="flex items-center gap-2">
                     <span className="text-2xl">⭐</span>
                     <div>
@@ -260,6 +260,7 @@ export default function HomePage() {
                   src="/images/dr-leal-headshot.jpg"
                   alt="Dr. Yillian Leal, DMD"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/60 via-transparent to-transparent" />
@@ -292,6 +293,7 @@ export default function HomePage() {
                   src="/images/dr-santana-headshot.jpg"
                   alt="Dr. Luis Santana, DMD"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/60 via-transparent to-transparent" />
@@ -350,6 +352,7 @@ export default function HomePage() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-purple-950/0 group-hover:bg-purple-950/20 transition-colors duration-300" />
@@ -361,7 +364,7 @@ export default function HomePage() {
 
       {/* ===== NEW PATIENT SPECIAL ===== */}
       <section className="py-20 lg:py-28 bg-gradient-to-r from-purple-900 via-purple-800 to-brand-purple relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-lilac rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -465,15 +468,15 @@ export default function HomePage() {
                   <div>
                     <p className="font-semibold text-gray-900">Office Hours</p>
                     <div className="text-gray-600 space-y-1 text-sm">
-                      <div className="flex justify-between gap-8">
+                      <div className="flex justify-between gap-4">
                         <span>Monday — Thursday</span>
-                        <span className="font-medium">8:00 AM — 6:00 PM</span>
+                        <span className="font-medium text-right whitespace-nowrap">8:00 AM — 6:00 PM</span>
                       </div>
-                      <div className="flex justify-between gap-8">
+                      <div className="flex justify-between gap-4">
                         <span>Friday — Saturday</span>
-                        <span className="font-medium">8:00 AM — 2:00 PM</span>
+                        <span className="font-medium text-right whitespace-nowrap">8:00 AM — 2:00 PM</span>
                       </div>
-                      <div className="flex justify-between gap-8">
+                      <div className="flex justify-between gap-4">
                         <span>Sunday</span>
                         <span className="font-medium text-gray-400">Closed</span>
                       </div>
@@ -505,7 +508,7 @@ export default function HomePage() {
             </div>
 
             {/* Map */}
-            <div className="rounded-2xl overflow-hidden shadow-xl h-[400px]">
+            <div className="rounded-2xl overflow-hidden shadow-xl h-[300px] sm:h-[400px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-74.0288!3d40.7677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f7b5f8b8b8b7%3A0x1234567890abcdef!2s4806+Bergenline+Ave%2C+Union+City%2C+NJ+07087!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"

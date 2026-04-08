@@ -69,8 +69,9 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-purple-50 transition"
+            className="lg:hidden p-3 -mr-2 rounded-lg hover:bg-purple-50 transition"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             <div className="w-6 h-5 flex flex-col justify-between">
               <span

@@ -36,6 +36,7 @@ export default function TeamPage() {
                 src="/images/dr-leal-headshot.jpg"
                 alt="Dr. Yillian Leal, DMD"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-top"
                 priority
               />
@@ -153,6 +154,7 @@ export default function TeamPage() {
                 src="/images/dr-santana-headshot.jpg"
                 alt="Dr. Luis Santana, DMD"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -193,6 +195,7 @@ export default function TeamPage() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
