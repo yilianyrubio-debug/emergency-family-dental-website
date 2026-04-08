@@ -36,7 +36,7 @@ export default function TeamPage() {
                 src="/images/dr-leal-headshot.jpg"
                 alt="Dr. Yillian Leal, DMD"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
             </div>
@@ -58,7 +58,7 @@ export default function TeamPage() {
                   Medicine degree from Rutgers School of Dental Medicine.
                 </p>
                 <p>
-                  Dr. Leal specializes in endodontics, cosmetic dentistry,
+                  Dr. Leal is highly proficient in endodontics, cosmetic dentistry,
                   emergency care, and pain management. Her passion for dentistry
                   and commitment to patient comfort have made her a trusted name in
                   the Union City community.

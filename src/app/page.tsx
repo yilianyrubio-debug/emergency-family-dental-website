@@ -97,7 +97,7 @@ export default function HomePage() {
                     alt="Dr. Yillian Leal - Emergency and Family Dental"
                     width={500}
                     height={625}
-                    className="object-cover w-full h-full"
+                    className="object-cover object-top w-full h-full"
                     priority
                   />
                 </div>
@@ -260,7 +260,7 @@ export default function HomePage() {
                   src="/images/dr-leal-headshot.jpg"
                   alt="Dr. Yillian Leal, DMD"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
