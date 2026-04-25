@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://emergencyandfamilydental.com",
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
