@@ -10,11 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo-standalone.jpg"
+              src="/images/logo-main.png"
               alt="Emergency & Family Dental"
-              width={60}
-              height={60}
-              className="h-16 w-auto mb-4"
+              width={80}
+              height={80}
+              className="h-20 w-auto mb-4"
             />
             <h3 className="text-xl font-bold mb-2">
               Emergency & Family Dental

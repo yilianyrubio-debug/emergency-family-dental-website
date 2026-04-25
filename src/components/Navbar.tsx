@@ -23,13 +23,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <Image
-              src="/images/logo-standalone.jpg"
+              src="/images/logo-main.png"
               alt="Emergency & Family Dental"
-              width={50}
-              height={50}
-              className="h-12 w-auto flex-shrink-0"
+              width={80}
+              height={80}
+              className="h-16 sm:h-20 w-auto flex-shrink-0"
               priority
             />
           </Link>
