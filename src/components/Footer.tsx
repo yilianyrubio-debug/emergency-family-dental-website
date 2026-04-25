@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,6 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
+            <Image
+              src="/images/logo-standalone.jpg"
+              alt="Emergency & Family Dental"
+              width={60}
+              height={60}
+              className="h-16 w-auto mb-4"
+            />
             <h3 className="text-xl font-bold mb-2">
               Emergency & Family Dental
             </h3>

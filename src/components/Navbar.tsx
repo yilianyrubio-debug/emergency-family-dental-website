@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const navLinks = [
@@ -23,18 +24,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            {/* Logo icon: tooth with heart */}
-            <div className="w-10 h-10 bg-gradient-to-br from-brand-purple to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
-              <span className="text-white text-lg">🦷</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-lg font-bold text-brand-purple leading-tight block">
-                Emergency & Family
-              </span>
-              <span className="text-sm text-purple-600 font-medium -mt-0.5 block">
-                Dental
-              </span>
-            </div>
+            <Image
+              src="/images/logo-standalone.jpg"
+              alt="Emergency & Family Dental"
+              width={50}
+              height={50}
+              className="h-12 w-auto flex-shrink-0"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
